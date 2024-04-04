@@ -28,6 +28,8 @@ function App() {
       setLoading(false)
     })
   },[])
+
+  //we can use if else also
   return !loading ? (
       <div className="min-h-screen flex flex-wrap content-between">
         <div className="w-full block">
