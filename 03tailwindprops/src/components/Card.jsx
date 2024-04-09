@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Card({channel,btntext="visit me"}) { //= give default value
-    //console.log("props",props);
+    // console.log("props",props);
     console.log(channel);
     return (
         <div><figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">

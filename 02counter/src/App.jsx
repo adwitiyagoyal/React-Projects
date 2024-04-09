@@ -6,11 +6,12 @@ import './App.css'
 
 function App() {
   let [counter,setCounter] = useState(5);
+  
 
   function addValue(){
     console.log("value added", Math.random());
-    // counter ++;
-    setCounter(counter+1);
+    counter ++ ;
+    setCounter(counter);
     
   }
 
@@ -37,3 +38,5 @@ function App() {
 }
 
 export default App
+
+
