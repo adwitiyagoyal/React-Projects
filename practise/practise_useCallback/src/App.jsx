@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import List from './List';
 
 function App() {
@@ -13,9 +13,10 @@ function App() {
     height:screen
   }
 
-  const getItems = () => {
-    return [Number(number),Number(number)+1,number+2];
-  }
+  const getItems = useCallback((inc) => {
+    return [Number(number+inc),Number(number+inc)+1,number+inc+2];
+  },[number])
+
   return (
     <div style={theme}>
       <input 

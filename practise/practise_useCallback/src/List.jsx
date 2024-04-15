@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function List({getItem}) {
     const [item,setItem] = useState([]);
     useEffect(()=>{
-        setItem(getItem());
+        setItem(getItem(2));
         console.log('update')
     },[getItem])
   return (
